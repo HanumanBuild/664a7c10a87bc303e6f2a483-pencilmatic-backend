@@ -25,9 +25,9 @@ router.post(
         drawing,
       });
 
-      const drawing = await newDrawing.save();
+      const savedDrawing = await newDrawing.save();
 
-      res.json(drawing);
+      res.json(savedDrawing);
     } catch (err) {
       console.error(err.message);
       res.status(500).send('Server error');

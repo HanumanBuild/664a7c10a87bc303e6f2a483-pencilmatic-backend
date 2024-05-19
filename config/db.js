@@ -17,3 +17,4 @@ const connectDB = async () => {
 };
 
 module.exports = connectDB;
+// End of MongoDB connection setup
